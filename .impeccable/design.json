@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-21T00:00:00Z",
+  "title": "Design System: Flowers for Aulia",
+  "extensions": {
+    "colorMeta": {
+      "wine": { "role": "neutral", "displayName": "Deep Wine", "canonical": "#2b0a1e", "tonalRamp": ["#1a0612", "#2b0a1e", "#47132f", "#6b2448", "#91426a", "#b76f93", "#d9a6bf", "#f4dde7"] },
+      "blush": { "role": "primary", "displayName": "Blush", "canonical": "#ffe1ea", "tonalRamp": ["#3a0f1f", "#6b2139", "#a03c5c", "#d0638a", "#ff9ebb", "#f59ab8", "#ffe1ea", "#ffc4d6"] },
+      "rose": { "role": "primary", "displayName": "Rose", "canonical": "#ff9ebb", "tonalRamp": ["#3a0f1f", "#6b2139", "#a03c5c", "#d0638a", "#ff9ebb", "#f59ab8", "#ffe1ea", "#ffc4d6"] },
+      "hint": { "role": "neutral", "displayName": "Dusty Pink", "canonical": "#e3a9bd", "tonalRamp": ["#33121f", "#5c2a3c", "#87495f", "#b06f87", "#cf8fa6", "#e3a9bd", "#efcad6", "#f9e8ee"] },
+      "rose-deep": { "role": "secondary", "displayName": "Rose Bloom, deep", "canonical": "#c9668a", "tonalRamp": ["#3b1826", "#6a3348", "#9c5873", "#c9668a", "#f0a8c0", "#f59ab8", "#ffdde7", "#ffc4d6"] },
+      "rose-mid": { "role": "secondary", "displayName": "Rose Bloom, mid", "canonical": "#f59ab8", "tonalRamp": ["#3b1826", "#6a3348", "#9c5873", "#c9668a", "#f0a8c0", "#f59ab8", "#ffdde7", "#ffc4d6"] },
+      "rose-light": { "role": "secondary", "displayName": "Rose Bloom, light", "canonical": "#ffc4d6", "tonalRamp": ["#3b1826", "#6a3348", "#9c5873", "#c9668a", "#f0a8c0", "#f59ab8", "#ffdde7", "#ffc4d6"] },
+      "tulip-deep": { "role": "secondary", "displayName": "Tulip Bloom, deep", "canonical": "#c2396d", "tonalRamp": ["#330818", "#66122f", "#981f4c", "#c2396d", "#f0447f", "#ff86ad", "#ffb9cf", "#ffe3ec"] },
+      "tulip-mid": { "role": "secondary", "displayName": "Tulip Bloom, mid", "canonical": "#f0447f", "tonalRamp": ["#330818", "#66122f", "#981f4c", "#c2396d", "#f0447f", "#ff86ad", "#ffb9cf", "#ffe3ec"] },
+      "tulip-light": { "role": "secondary", "displayName": "Tulip Bloom, light", "canonical": "#ff86ad", "tonalRamp": ["#330818", "#66122f", "#981f4c", "#c2396d", "#f0447f", "#ff86ad", "#ffb9cf", "#ffe3ec"] },
+      "stem-deep": { "role": "tertiary", "displayName": "Stem Sage, deep", "canonical": "#4f8262", "tonalRamp": ["#12241a", "#24402f", "#386049", "#4f8262", "#7fb08a", "#a5cdae", "#c8e1cd", "#e8f3ea"] },
+      "stem-mid": { "role": "tertiary", "displayName": "Stem Sage, mid", "canonical": "#7fb08a", "tonalRamp": ["#12241a", "#24402f", "#386049", "#4f8262", "#7fb08a", "#a5cdae", "#c8e1cd", "#e8f3ea"] },
+      "stem-light": { "role": "tertiary", "displayName": "Stem Sage, light", "canonical": "#a5cdae", "tonalRamp": ["#12241a", "#24402f", "#386049", "#4f8262", "#7fb08a", "#a5cdae", "#c8e1cd", "#e8f3ea"] },
+      "leaf-deep": { "role": "tertiary", "displayName": "Leaf Sage, deep", "canonical": "#3f7354", "tonalRamp": ["#0f2218", "#1f3d2c", "#2f5941", "#3f7354", "#69a57c", "#93c4a2", "#bcdcc5", "#e3f1e7"] },
+      "leaf-mid": { "role": "tertiary", "displayName": "Leaf Sage, mid", "canonical": "#69a57c", "tonalRamp": ["#0f2218", "#1f3d2c", "#2f5941", "#3f7354", "#69a57c", "#93c4a2", "#bcdcc5", "#e3f1e7"] },
+      "leaf-light": { "role": "tertiary", "displayName": "Leaf Sage, light", "canonical": "#93c4a2", "tonalRamp": ["#0f2218", "#1f3d2c", "#2f5941", "#3f7354", "#69a57c", "#93c4a2", "#bcdcc5", "#e3f1e7"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The message, the page's only heading, in portrait and near-square layouts. Signature at 0.6em beneath it." },
+      "display-wide": { "displayName": "Display, wide", "purpose": "The message at aspect ratio 7:5 and wider, left-aligned beside the bouquet." },
+      "label": { "displayName": "Label", "purpose": "The single lowercase hint line under the message." },
+      "matter": { "displayName": "Matter", "purpose": "The bouquet letters. Uppercase, preformatted; size set by script per screen, 10px to 24px, cell 0.6em by 1.15em." }
+    },
+    "shadows": [],
+    "motion": [
+      { "name": "gather", "value": "6s, cubic ease-out per letter (1 - (1 - x)^3), start staggered 0 to 0.55 of the run", "purpose": "Scattered letters travel into the bouquet: stems first, then ribbon, leaves, blooms; blooms then open." },
+      { "name": "scatter", "value": "0.7s", "purpose": "A tap bursts the letters apart, after which the gather runs again." },
+      { "name": "spin", "value": "0.3rad/s constant", "purpose": "The finished bouquet turns steadily; a drag release adds a decaying fling." },
+      { "name": "message-reveal", "value": "opacity and translateY(10px) over 1.4s cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The message fades in once when the bouquet is about 90% gathered. The only fade on the page; removed under reduced motion." }
+    ],
+    "breakpoints": [
+      { "name": "wide", "value": "(min-aspect-ratio: 7/5)" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Bouquet",
+      "kind": "custom",
+      "refersTo": "bouquet",
+      "description": "The centerpiece and only control: one button holding a preformatted grid of message letters, colored by kind and tone. Static sample; the live one is animated by script.",
+      "html": "<button class=\"ds-bouquet\" type=\"button\" aria-label=\"A bouquet made from the letters of the message\"><pre class=\"ds-art\" aria-hidden=\"true\"><span class=\"ds-t1\"> EAR</span>   <span class=\"ds-r2\">ESTA</span>   <span class=\"ds-t2\">ULI</span>\n<span class=\"ds-t0\">A~SEA</span> <span class=\"ds-r1\">NMADEW</span> <span class=\"ds-t1\">ITHLO</span>\n<span class=\"ds-t0\"> VEF</span>  <span class=\"ds-r0\">ORMYDE</span>  <span class=\"ds-t0\">ARE</span>\n   <span class=\"ds-l1\">STA</span> <span class=\"ds-s1\">U LI</span> <span class=\"ds-l2\">A~S</span>\n      <span class=\"ds-b\">EANMA</span>\n       <span class=\"ds-s0\">D E</span>\n      <span class=\"ds-s0\">W I T</span></pre></button>",
+      "css": ".ds-bouquet { appearance: none; border: 0; padding: 0; background: var(--wine, #2b0a1e); color: var(--blush, #ffe1ea); cursor: grab; border-radius: 8px; } .ds-bouquet:active { cursor: grabbing; } .ds-bouquet:focus-visible { outline: 2px solid var(--rose, #ff9ebb); outline-offset: 6px; } .ds-art { margin: 0; font: 700 16px / 1.15 \"JetBrains Mono\", ui-monospace, monospace; white-space: pre; text-align: left; } .ds-r0 { color: #c9668a; } .ds-r1 { color: #f59ab8; } .ds-r2 { color: #ffc4d6; } .ds-t0 { color: #c2396d; } .ds-t1 { color: #f0447f; } .ds-t2 { color: #ff86ad; } .ds-s0 { color: #4f8262; } .ds-s1 { color: #7fb08a; } .ds-l1 { color: #69a57c; } .ds-l2 { color: #93c4a2; } .ds-b { color: var(--blush, #ffe1ea); }"
+    },
+    {
+      "name": "Message",
+      "kind": "custom",
+      "refersTo": "message",
+      "description": "The page's only heading, in Archivo Black and blush, with the signature in rose beneath it.",
+      "html": "<h1 class=\"ds-msg\">Made with love for my dearest Aulia<span class=\"ds-sig\">~ Sean</span></h1>",
+      "css": ".ds-msg { margin: 0; padding: 16px; background: var(--wine, #2b0a1e); color: var(--blush, #ffe1ea); font: 400 clamp(1.6rem, 4vmin + 0.7rem, 3.2rem) / 1.04 \"Archivo Black\", sans-serif; letter-spacing: -0.01em; max-width: 11em; text-align: center; text-wrap: balance; } .ds-sig { display: block; margin-top: 0.5em; font-size: 0.6em; color: var(--rose, #ff9ebb); }"
+    },
+    {
+      "name": "Hint",
+      "kind": "custom",
+      "refersTo": "hint",
+      "description": "One lowercase bold-mono line in dusty pink naming the two gestures.",
+      "html": "<p class=\"ds-hint\">drag to turn · tap to scatter and gather</p>",
+      "css": ".ds-hint { margin: 0; padding: 16px; background: var(--wine, #2b0a1e); color: var(--hint, #e3a9bd); font: 700 clamp(12px, 1.5vmin, 18px) / 1.4 \"JetBrains Mono\", ui-monospace, monospace; letter-spacing: 0.04em; text-align: center; text-wrap: balance; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Letters as Matter",
+    "overview": "Nothing here is drawn. Every petal, leaf, stem and ribbon is a bold uppercase letter taken from the message, and the letters behave like physical stuff: they drift in loose, gather from the stems up, open into blooms, turn as one body, and burst apart when touched. The picture and the words are the same material, so reading the bouquet and looking at it are one act.\n\nThe world is an alphabet storm moved from black-on-white to pinks on wine. One flat deep-wine ground holds everything. There are two typefaces and no other surfaces: a bold monospace for the matter and the small hint, and one heavy grotesk for the message. Color carries all the form, in three tones per kind of matter. It refuses the black terminal with glowing monospace that text-art pages default to.",
+    "keyCharacteristics": [
+      "One flat wine ground, no panels, borders, gradients, glow or shadows.",
+      "Letters are the only drawing material, and they come only from the message.",
+      "Three tones (deep, mid, light) per kind of matter; kind is told apart by color.",
+      "Two faces: JetBrains Mono 700 for matter and hint, Archivo Black for the message.",
+      "One screen, no scroll, no navigation; the bouquet is the single control.",
+      "The letter grid is sized by script to fit any screen shape."
+    ],
+    "rules": [
+      { "name": "The Flat Ground Rule", "body": "Wine is the only surface. Nothing sits on a second background, and no color fades into another.", "section": "colors" },
+      { "name": "The Kind Is the Color Rule", "body": "Roses are pale, tulips are saturated, stems and leaves are sage, the ribbon is blush. Each kind keeps its own three-tone ramp; ramps are never shared or blended between kinds.", "section": "colors" },
+      { "name": "The Message Alphabet Rule", "body": "Matter letters are the message with spaces removed, uppercase, with the tilde kept (MADEWITHLOVEFORMYDEARESTAULIA~SEAN), dealt in order by grid cell. No other characters, symbols or shading glyphs make the picture.", "section": "typography" },
+      { "name": "The Readable Letter Rule", "body": "Matter never goes below 10px. On a small screen the grid gets fewer letters, not smaller ones.", "section": "typography" },
+      { "name": "The Tone Is Depth Rule", "body": "Roundness comes from the three-tone ramps and the gaps between blooms. Nothing is lifted off the ground by shadow, opacity or blur.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do build every picture out of the message's own letters, uppercase, in JetBrains Mono 700.",
+      "Do keep each kind of matter on its own three-tone ramp and let tone, not effects, show depth.",
+      "Do keep wine as the single ground and blush, rose and dusty pink as the only colors for interface text.",
+      "Do let the script fit the letter grid to the screen, between 10px and 24px letters.",
+      "Do switch layout by aspect ratio (7:5), so every landscape screen gets the side-by-side arrangement.",
+      "Do keep a still, complete bouquet for reduced motion, with turning still available.",
+      "Do keep the message as real heading text in Archivo Black, separate from the letter picture."
+    ],
+    "donts": [
+      "Don't add glow, gradients, shadows, blur or scanlines; this is not a glowing terminal.",
+      "Don't put anything on a second surface: no cards, panels, borders or dividers.",
+      "Don't draw with characters from outside the message, such as block or shading glyphs, punctuation art or emoji.",
+      "Don't shrink matter letters below 10px to fit more detail.",
+      "Don't add a third typeface or a second weight of either face.",
+      "Don't fade or slide anything except the message, and that only once.",
+      "Don't blend the rose and tulip ramps; pale means rose and saturated means tulip."
+    ]
+  }
+}

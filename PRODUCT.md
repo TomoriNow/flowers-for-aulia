@@ -37,7 +37,7 @@ It is made for exactly one person and signed by the person who made it. It is no
   > Made with love for my dearest Aulia
   > ~ Sean
 
-- Mobile-first: must work well at phone widths and with touch input.
+- Every screen shape (binding): must look right on phones, tablets and desktops, in portrait and landscape, at any aspect ratio. Touch, mouse and keyboard input all work.
 
 ## Brand Commitments
 
@@ -52,9 +52,9 @@ None. There are no photos, extra copy or assets. Do not invent memories, quotes,
 
 1. The bouquet is the gift. Everything else stays out of its way.
 2. Personal over polished-generic. It should feel handmade by Sean, not like a stock template.
-3. Phone first. The first impression happens on a small touchscreen.
+3. Any screen. The first impression is likely a phone, but it must be just as good on a desktop or a tablet turned sideways.
 4. Reward lingering. Interaction should invite her to come back, not explain itself with instructions.
 
 ## Accessibility & Inclusion
 
-Respect `prefers-reduced-motion` with a calm, still or slow version of the bouquet. The message must be real, readable text, not only ASCII art.
+Respect `prefers-reduced-motion` with a calm, still or slow version of the bouquet. The message must be real, readable text, not only ASCII art. The bouquet has a text description for screen readers, is operable by keyboard, and text meets WCAG AA contrast.
